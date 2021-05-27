@@ -23,7 +23,7 @@ $ conda install -c anaconda jupyter
 ```
 * Then you can clone this repository using git clone, and install requirements.txt
 ```bash
-$ git clone 
+$ git clone https://github.com/anurag-dalal/Bank-Indesa
 $ cd Bank-Indesa
 $ pip install -r requirements.txt
 ```
