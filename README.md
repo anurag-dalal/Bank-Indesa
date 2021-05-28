@@ -12,7 +12,7 @@ In this challenge, you will help this bank by predicting the probability that a 
 
 ## Folder Structure and requirements
 
-The dataset files are contained in ML_Artivatic_dataset folder.
+The dataset files are contained in ML_Artivatic_dataset folder (the files are too big to upload).
 This is done on a conda enviornment in python 3.8.
 
 ### Instalation Guides
