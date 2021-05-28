@@ -54,6 +54,9 @@ Features where median imputaion is applied: term, loan_amnt, funded_amnt, last_w
 
 Features where zero imputaion is applied: acc_now_delinq, total_rec_late_fee, recoveries, collection_recovery_fee, collections_12_mths_ex_med
 
+### Feature Scaling
+XGBoost is not sensitive to monotonic transformations of its features for the same reason that decision trees and random forests are not: the model only needs to pick "cut points" on features to split a node. Splits are not sensitive to monotonic transformations: defining a split on one scale has a corresponding split on the transformed scale.
+
 ### Feature Engineering
 
 This is the most important step for any data science based application. We have to select the relevant features.
@@ -81,5 +84,15 @@ The steps followed in this particular dataset are:
 
 So there is a total of 33 features are created for training our model.
 
-### Model used
+### Test Train split
+The data is splitted into 30% test and 70% train.
 
+### Model used
+A XGBoost model is used. Researching from web, it is found that XGBoost have the best accuracy in task like lone default predictiion.
+For Hyper Parameter Optimization RandomizedSearchCV is used to optimize the learning_rate, max_depth, min_child_weight, gamma, colsample_bytree and n_estimators parameters.
+RandomizedSearchCV was run with 5 iteration and 5 fold cross validation.
+
+The best parameters that are selected by RandomizedSearchCV:
+{'n_estimators': 700, 'min_child_weight': 7, 'max_depth': 20, 'learning_rate': 0.15, 'gamma': 10, 'colsample_bytree': 0.5}
+
+The final ROC score is 92.4865812572%
