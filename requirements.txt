@@ -2,3 +2,5 @@ numpy
 pandas
 xgboost
 sklearn
+matplotlib
+seaborn
