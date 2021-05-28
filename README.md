@@ -1,6 +1,6 @@
 ## Problem Statement
 
-### Bank Fears Loanliness
+### Bank loan defaulter prediction
 
 The Bank Indessa has not done well in last 3 quarters. Their NPAs (Non Performing Assets) have reached all time high. It is starting to lose confidence of its investors. As a result, it’s stock has fallen by 20% in the previous quarter alone.
 
